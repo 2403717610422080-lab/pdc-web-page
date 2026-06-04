@@ -1,10 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Destinations Around the World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#333;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+z-index:1000;
+}
+
+nav h2{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul a{
+color:white;
+text-decoration:none;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ff4d6d;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+color:#ff4d6d;
+margin-bottom:40px;
+}
+
+.destinations{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+color:#ff4d6d;
+margin-bottom:10px;
+}
+
+.about{
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, I'm Dhivya!</h1>
-  <p>My first GitHub website.</p>
+
+<nav>
+<h2>Dream Destinations</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#places">Places</a></li>
+</ul>
+</nav>
+
+<header>
+
+<div class="hero">
+<h1>Dream Destinations Around the World 🌍</h1>
+
+<p>
+Explore the world's most beautiful destinations,
+from tropical islands to historic cities.
+</p>
+
+<a href="#places" class="btn">Explore Now</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="title">About Travel</h2>
+
+<div class="about">
+
+<p>
+Travel opens the door to unforgettable experiences,
+new cultures, breathtaking landscapes and memories that last forever.
+This website showcases some of the world's dream destinations.
+</p>
+
+</div>
+
+</section>
+
+<section id="places">
+
+<h2 class="title">Top Dream Destinations</h2>
+
+<div class="destinations">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200">
+<div class="card-content">
+<h3>Kyoto, Japan 🇯🇵</h3>
+<p>Ancient temples, cherry blossoms and traditional culture.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200">
+<div class="card-content">
+<h3>Paris, France 🇫🇷</h3>
+<p>The city of love, fashion, art and the Eiffel Tower.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200">
+<div class="card-content">
+<h3>Maldives 🇲🇻</h3>
+<p>Crystal-clear water, luxury resorts and white sand beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200">
+<div class="card-content">
+<h3>Dubai, UAE 🇦🇪</h3>
+<p>Luxury shopping, skyscrapers and desert adventures.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200">
+<div class="card-content">
+<h3>Switzerland 🇨🇭</h3>
+<p>Snowy mountains, scenic trains and stunning landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=1200">
+<div class="card-content">
+<h3>Bali, Indonesia 🇮🇩</h3>
+<p>Tropical paradise with temples, beaches and waterfalls.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Dream Destinations Around the World | Designed by Dhivya ✨</p>
+</footer>
+
 </body>
 </html>
